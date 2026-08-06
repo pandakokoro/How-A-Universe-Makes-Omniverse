@@ -24,15 +24,16 @@ def main()-> None:
 
     print(greet(name))
 
+    raw_age = ""
     while True:
         try:
             raw_age = input("Guess the Code: ")
-            age = validate_age(raw_age)
+            validate_age(raw_age)
             break
         except ValueError as e:
             print(f"Error: {e}")
 
-    print(f"User Profile Verified! Age: {age}")
+    print(f"User Profile Verified!")
     print(f"Your secret I'd is: {name.upper()}_{raw_age}_T")
 
 if __name__ == "__main__":
