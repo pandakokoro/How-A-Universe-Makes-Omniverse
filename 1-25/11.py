@@ -9,7 +9,7 @@ def validate(value: str, condition, message: str) -> str:
         raise SecurityValidationError(message)
     return value
 
-def build_engine(*values: int, **config: int) -> dict:
+def build_engine(*values: int, **config) -> dict:
     valid = list(filter(lambda x: x > 0, values))
     power = reduce(lambda a, x: a + x ** 2, valid, 0)
     return {"power": power, **config}

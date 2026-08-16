@@ -4,9 +4,9 @@ def calculate_power_sum(*numbers:int) -> int:
     total = sum(numbers)
     return total **3
 
-def generate_hero_stats(hero_name: str, **attributes: int) -> dict:
+def generate_hero_stats(hero_name: str, **attributes: int) -> dict[str, str | int]:
     """Generate a dictionary of hero attributes."""
-    stats = {"Hero Name": hero_name}
+    stats: dict[str, str | int] = {"Hero Name": hero_name}
     stats.update(attributes)
     return stats
 
