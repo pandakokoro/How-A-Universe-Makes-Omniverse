@@ -1,21 +1,32 @@
-Name = input("What you call your exitense: ")
-Age = int(input("did you can do crimes\n I mean what is your age: "))
-if Name == "panda":
-    print("My lord")
-elif Name == "boy":
-    print("dumpass")
-elif Name == "girl":
-    print("Real Dumpass")
-else:
-    print(f"The saviour {Name}")
+import numpy as np 
+import random as rd
 
-if Age <=0 :
-    print("Suar")
-elif Age <= 18 :
-    print("Your Crime....\n status is private right now....\n but not permanent bro....")
-elif Age <= 40 :
-    print("Will you be my crime partner")
-elif Age <= 80:
-    print("Sorry but it's times time to play with you")
-else:
-    print("Happy twinkling Star")
+arr = np.arange(25).reshape(5,5)
+
+def sovereign_name(arr):
+    mission = """
+
+MAKE THIS EARTH TO BECOME THE CIVILIZATION II, 
+    DYSON SPHERE,
+        THE ULTIMATE WEAPON,
+            HYDRO-NUCLEAR BOMB,
+                ONE OMNIVERSE = ONE PLANET = INDIA
+
+
+
+               """
+    name = input("Enter your name: ").strip().lower()
+    print(name)
+    great = ["panda","kirti","lisa","roses","jennie","jisoo"]
+    name_words = name.split()
+    if any(word in great for word in name_words):
+        print(f"Sovereign pass for {name_words},\n"
+                 f"The sovereign Members are {great},\n"
+                    f"We are on a Mission,\n"
+                        f"The Mission,\n"
+                            f"{mission}")
+    else:
+        pass
+    
+if __name__ == "__main__" :
+    sovereign_name(arr)
