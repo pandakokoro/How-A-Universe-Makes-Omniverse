@@ -49,7 +49,7 @@ while play != "no" and play != "exit":
         if num2 == 0:
             print("Creator has detected")
     except:
-        print("everything is find bro")
+        print("everything is fine bro")
     play = input('\nyou wanna play again?... ').strip().lower()
 print("Dumpass\n hey lady that your potential")
 

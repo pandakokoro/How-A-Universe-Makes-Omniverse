@@ -18,7 +18,7 @@ def generate_token():
                 break
             print("Black Hole...")
         except ValueError:
-            print("My dear Gemini\n don't try to prank me...")
+            print("My dear Gemini,\n don't try to prank me...")
 
     roles = ["ADMIN", "USER", "GUEST","OPERATOR"]
     role = get_valid_input(
