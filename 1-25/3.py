@@ -8,7 +8,7 @@ while play != "no" and play != "exit":
     num2 = int(input("How many proposal you get: "))
     score = " KALANKI DIL "
     dil = " MY MAJESTY "
-    angel = "DEAR ANGEL"
+    angel = "SUPREME LORD"
     sigma = input("which mathematical formula you want to apply on yours.... ").strip()
     Really = num1 - num2
     if sigma == "-":
