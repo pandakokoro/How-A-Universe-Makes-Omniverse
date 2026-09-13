@@ -8,7 +8,7 @@ def sovereign_msg(msg):
     soverignty = ["save","help","we","india","heart","peace"]
     if "indian" in pycom:
         if any(word in pycom for word in soverignty):
-            print("soverignty has been called")
+            print("\nsoverignty has been called\n")
         else:
             pass
     else:
