@@ -34,7 +34,7 @@ def main()-> None:
             print(f"Error: {e}")
 
     print(f"User Profile Verified!")
-    print(f"Your secret I'd is: {name.upper()}_{raw_age}_T")
+    print(f"Your secret I'd is: {name.upper()}DEV{raw_age}T")
 
 if __name__ == "__main__":
     main()
