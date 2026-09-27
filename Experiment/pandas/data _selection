@@ -1,0 +1,12 @@
+import pandas as pd 
+import numpy as np  
+import random as rd
+
+arr1 = np.random.choice(16,size=(2),replace=False)+9
+arr2 = np.random.choice(100,size=(2),replace=False)+9
+arr3 = np.random.choice(200,size=(2),replace=False)+9
+arr4 = np.random.choice(300,size=(2),replace=False)+9
+
+
+df = pd.DataFrame({"NAME": ["kirti","roy"], "POWER": arr1 , "BQ": arr2 , "DOMINACE": arr3 , "LOVE": arr4})
+print(df)
