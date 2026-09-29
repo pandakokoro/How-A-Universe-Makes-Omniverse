@@ -1,0 +1,19 @@
+import numpy as np
+import random as rd
+
+for i in range(10000):
+    print(f"\r{i}" ,end="",flush=False)
+
+arr = np.random.choice(999,size=(7,7),replace=False).astype(int)
+zeros = np.zeros_like(arr)
+print(f"\n \nThe verdict  \n \n {zeros}  \n \nAnd the matrix \n \n{arr}\n \n ")
+
+
+n = 87645
+
+while n > 0:
+    r = n % 10
+    print(r, end=" ")
+    n //= 10
+
+
